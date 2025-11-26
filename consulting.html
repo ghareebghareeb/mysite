@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>حجز استشارة | غريب الشيخ</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-root">
+      <header class="header">
+        <div class="container header-inner">
+          <a href="index.html#hero" class="brand">
+            <span class="brand-mark">
+              <img src="assets/logo.png" alt="شعار غريب الشيخ" class="brand-logo" />
+            </span>
+            <span class="brand-text">
+              <span class="brand-name">غريب الشيخ</span>
+              <span class="brand-tagline">تعليم البرمجة للمبتدئين</span>
+            </span>
+          </a>
+
+          <nav class="nav" aria-label="التنقل الرئيسي">
+            <button class="nav-toggle" aria-label="فتح أو إغلاق القائمة">
+              <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+              <li><a href="index.html#hero">الرئيسية</a></li>
+              <li><a href="#consulting-form-section">حجز استشارة</a></li>
+              <li><a href="index.html#courses">الدورات</a></li>
+              <li><a href="advertise.html">للإعلان</a></li>
+            </ul>
+          </nav>
+
+          <a href="index.html#courses" class="btn btn-outline header-cta">
+            تصفح الدورات
+          </a>
+        </div>
+      </header>
+
+      <main>
+        <section class="section section-soft" id="consulting-form-section">
+          <div class="container consulting-page-grid">
+            <div class="reveal">
+              <h1>احجز استشارة خاصة الآن</h1>
+              <p>
+                إذا كنت محتار في اختيار مسار برمجي، أو تفكر في تغيير وظيفتك، أو لا تعرف من أين
+                تبدأ رحلتك في مجال التقنية، فيمكننا خلال جلسة استشارة مدتها ٤٥ دقيقة أن نرسم
+                معًا خريطة واضحة لخطوتك القادمة.
+              </p>
+              <p>
+                املأ النموذج بجانبك مع توضيح سبب الاستشارة وأهم الأسئلة التي تشغلك، وسيصلني
+                طلبك على البريد الإلكتروني لأطلع على تفاصيلك قبل موعد الجلسة.
+              </p>
+              <ul class="consulting-points">
+                <li>استشارة فردية عبر Zoom لمدة ٤٥ دقيقة</li>
+                <li>مناسبة للمبتدئين ومن هم في مرحلة الانتقال المهني</li>
+                <li>خطة عملية واضحة بنهاية الجلسة</li>
+              </ul>
+            </div>
+
+            <aside class="card consulting-card reveal delay-1">
+              <h2>نموذج طلب الاستشارة</h2>
+              <form id="consulting-form" class="consulting-form">
+                <div class="form-group">
+                  <label for="name" class="form-label">الاسم الكامل</label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    class="form-input"
+                    required
+                    placeholder="اكتب اسمك هنا"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="form-label">البريد الإلكتروني</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    class="form-input"
+                    required
+                    placeholder="example@email.com"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="topic" class="form-label">مجال الاستشارة</label>
+                  <select id="topic" name="topic" class="form-input">
+                    <option value="مسار برمجي">تحديد المسار البرمجي المناسب</option>
+                    <option value="تغيير وظيفة">تغيير مجال العمل إلى البرمجة</option>
+                    <option value="تطوير مهارات">
+                      تطوير المهارات / اختيار الدورات المناسبة
+                    </option>
+                    <option value="مشروع خاص">بدء مشروع أو عمل حر في البرمجة</option>
+                    <option value="أخرى">أخرى</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="message" class="form-label">سبب الاستشارة / التفاصيل</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    class="form-input form-textarea"
+                    required
+                    placeholder="اكتب باختصار وضعك الحالي وأهم الأسئلة أو التحديات التي تواجهك..."
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary full-width">
+                  إرسال طلب الاستشارة
+                </button>
+              </form>
+              <p class="consulting-note small-note">
+                سيتم فتح برنامج البريد لديك مع رسالة جاهزة تحتوي على بياناتك، فقط تأكد من
+                الضغط على زر الإرسال من داخل برنامج البريد.
+              </p>
+            </aside>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer-inner">
+          <div class="footer-brand">
+            <span class="brand-mark brand-mark-sm">
+              <img src="assets/logo.png" alt="شعار غريب الشيخ" class="brand-logo" />
+            </span>
+            <div>
+              <p class="footer-title">غريب الشيخ</p>
+              <p class="footer-subtitle">تعليم البرمجة للمبتدئين باللغة العربية</p>
+            </div>
+          </div>
+          <nav class="footer-links">
+            <a href="index.html#courses">الدورات</a>
+            <a href="index.html#about">من أنا</a>
+            <a href="#consulting-form-section">الاستشارات</a>
+          </nav>
+          <p class="footer-copy">
+            © <span id="year"></span> غريب الشيخ. جميع الحقوق محفوظة.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+      window.addEventListener("load", () => {
+        window.scrollTo(0, 0);
+      });
+
+      const navToggle = document.querySelector(".nav-toggle");
+      const navLinks = document.querySelector(".nav-links");
+      if (navToggle && navLinks) {
+        navToggle.addEventListener("click", () => {
+          navLinks.classList.toggle("nav-open");
+        });
+      }
+
+      const revealElements = document.querySelectorAll(".reveal");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("in-view");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
+
+      revealElements.forEach((el) => observer.observe(el));
+
+      const yearSpan = document.getElementById("year");
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+
+      // Build email with form data and open mail client
+      const consultingForm = document.getElementById("consulting-form");
+      if (consultingForm) {
+        consultingForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const name = document.getElementById("name").value.trim();
+          const email = document.getElementById("email").value.trim();
+          const topic = document.getElementById("topic").value;
+          const message = document.getElementById("message").value.trim();
+
+          if (!email || !message) {
+            alert("من فضلك أدخل البريد الإلكتروني وسبب الاستشارة.");
+            return;
+          }
+
+          const subject = encodeURIComponent(
+            `طلب استشارة مهنية من ${name || "بدون اسم"}`
+          );
+          const bodyLines = [
+            "تفاصيل طلب الاستشارة:",
+            "",
+            `الاسم: ${name || "غير محدد"}`,
+            `البريد الإلكتروني: ${email}`,
+            `مجال الاستشارة: ${topic}`,
+            "",
+            "سبب الاستشارة / التفاصيل:",
+            message,
+          ];
+
+          const body = encodeURIComponent(bodyLines.join("\n"));
+          const mailto = `mailto:contact@ghareeb.website?subject=${subject}&body=${body}`;
+          window.location.href = mailto;
+        });
+      }
+    </script>
+  </body>
+  </html>
+
+

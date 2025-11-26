@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>كل الدورات | غريب الشيخ</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-root">
+      <header class="header">
+        <div class="container header-inner">
+          <a href="index.html#hero" class="brand">
+            <span class="brand-mark">
+              <img src="assets/logo.png" alt="شعار غريب الشيخ" class="brand-logo" />
+            </span>
+            <span class="brand-text">
+              <span class="brand-name">غريب الشيخ</span>
+              <span class="brand-tagline">تعليم البرمجة للمبتدئين</span>
+            </span>
+          </a>
+
+          <nav class="nav" aria-label="التنقل الرئيسي">
+            <button class="nav-toggle" aria-label="فتح أو إغلاق القائمة">
+              <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+              <li><a href="index.html#hero">الرئيسية</a></li>
+              <li><a href="#courses-list">كل الدورات</a></li>
+              <li><a href="index.html#about">من أنا</a></li>
+              <li><a href="advertise.html">للإعلان</a></li>
+            </ul>
+          </nav>
+
+          <a href="index.html#consulting" class="btn btn-outline header-cta">
+            احجز استشارة
+          </a>
+        </div>
+      </header>
+
+      <main>
+        <section class="section section-soft" id="courses-list">
+          <div class="container">
+            <header class="section-heading reveal">
+              <h1>كل الدورات التعليمية</h1>
+              <p>
+                هنا ستجد جميع الدورات الحالية والقادمة، مع إمكانية إضافة المزيد من الكورسات
+                بسهولة في المستقبل.
+              </p>
+            </header>
+
+            <div class="grid-3 course-grid">
+              <article class="card course-card reveal">
+                <figure class="course-thumb">
+                  <img src="assets/كورس CS50 بالعربي.webp" alt="غلاف كورس CS50 بالعربي" />
+                </figure>
+                <div class="course-category">البرمجة</div>
+                <h3>كورس CS50 بالعربي</h3>
+                <p class="course-price">$00.00</p>
+                <ul class="course-meta">
+                  <li>10 أسابيع</li>
+                  <li>٢٦ ساعة من الفيديوهات التعليمة</li>
+                </ul>
+                <a href="#" class="btn btn-primary full-width">مشاهدة الكورس</a>
+              </article>
+
+              <article class="card course-card reveal delay-1">
+                <figure class="course-thumb">
+                  <img
+                    src="assets/كورس تعلم لينكدإن LinkedIn.webp"
+                    alt="غلاف كورس تعلم لينكدإن LinkedIn"
+                  />
+                </figure>
+                <div class="course-category">الرحلة المهنية</div>
+                <h3>كورس تعلم لينكدإن LinkedIn</h3>
+                <p class="course-price">$00.00</p>
+                <ul class="course-meta">
+                  <li>1 محاضرة</li>
+                  <li>٤٠ دقيقة</li>
+                </ul>
+                <a href="#" class="btn btn-primary full-width">مشاهدة الكورس</a>
+              </article>
+
+              <article class="card course-card reveal delay-2">
+                <figure class="course-thumb">
+                  <img
+                    src="assets/كورس أساسيات الكمبيوتر.webp"
+                    alt="غلاف كورس أساسيات الكمبيوتر"
+                  />
+                </figure>
+                <div class="course-category">البرمجة</div>
+                <h3>كورس أساسيات الكمبيوتر</h3>
+                <p class="course-price">$00.00</p>
+                <ul class="course-meta">
+                  <li>٢٠ فيديو</li>
+                  <li>٣ ساعة من الفيديوهات التعليمة</li>
+                </ul>
+                <a href="#" class="btn btn-primary full-width">مشاهدة الكورس</a>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer-inner">
+          <div class="footer-brand">
+            <span class="brand-mark brand-mark-sm">
+              <img src="assets/logo.png" alt="شعار غريب الشيخ" class="brand-logo" />
+            </span>
+            <div>
+              <p class="footer-title">غريب الشيخ</p>
+              <p class="footer-subtitle">تعليم البرمجة للمبتدئين باللغة العربية</p>
+            </div>
+          </div>
+          <nav class="footer-links">
+            <a href="index.html#courses">الدورات</a>
+            <a href="index.html#about">من أنا</a>
+            <a href="index.html#consulting">الاستشارات</a>
+          </nav>
+          <p class="footer-copy">
+            © <span id="year"></span> غريب الشيخ. جميع الحقوق محفوظة.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+      window.addEventListener("load", () => {
+        window.scrollTo(0, 0);
+      });
+
+      const navToggle = document.querySelector(".nav-toggle");
+      const navLinks = document.querySelector(".nav-links");
+      if (navToggle && navLinks) {
+        navToggle.addEventListener("click", () => {
+          navLinks.classList.toggle("nav-open");
+        });
+      }
+
+      const revealElements = document.querySelectorAll(".reveal");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("in-view");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
+
+      revealElements.forEach((el) => observer.observe(el));
+
+      const yearSpan = document.getElementById("year");
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+    </script>
+  </body>
+  </html>
+
+
